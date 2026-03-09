@@ -1,0 +1,852 @@
+<!-- order-success.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Successful - Vertexn</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Minimal Header for Success Page -->
+    <header class="checkout-header">
+      <div class="container">
+        <div class="checkout-header-wrapper">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="/images/vertexn_upscale.png" alt="Vertexn"
+            /></a>
+          </div>
+          <div class="checkout-steps">
+            <div class="step completed">
+              <span class="step-number"><i class="fas fa-check"></i></span>
+              <span class="step-label">Cart</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step completed">
+              <span class="step-number"><i class="fas fa-check"></i></span>
+              <span class="step-label">Checkout</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step completed">
+              <span class="step-number"><i class="fas fa-check"></i></span>
+              <span class="step-label">Payment</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step active">
+              <span class="step-number">4</span>
+              <span class="step-label">Complete</span>
+            </div>
+          </div>
+          <div class="checkout-security">
+            <i class="fas fa-lock"></i>
+            <span>Secure Checkout</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Order Success Section -->
+    <section class="order-success-section">
+      <div class="container">
+        <div class="success-container">
+          <!-- Success Icon -->
+          <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+
+          <h1>Thank You for Your Order!</h1>
+          <p class="success-message">
+            Your order has been placed successfully.
+          </p>
+
+          <!-- Order Info Card -->
+          <div class="order-info-card">
+            <div class="order-number">
+              <span>Order Number:</span>
+              <strong>#VK-2026-12345</strong>
+            </div>
+
+            <div class="order-details">
+              <div class="detail-item">
+                <i class="fas fa-calendar"></i>
+                <div>
+                  <span class="label">Order Date</span>
+                  <span class="value">March 9, 2026</span>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <i class="fas fa-credit-card"></i>
+                <div>
+                  <span class="label">Payment Method</span>
+                  <span class="value">Credit Card (Razorpay)</span>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <i class="fas fa-truck"></i>
+                <div>
+                  <span class="label">Shipping Method</span>
+                  <span class="value">Free Shipping (3-7 business days)</span>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span class="label">Confirmation Sent To</span>
+                  <span class="value">rahul.k@example.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order Summary -->
+          <div class="order-summary-success">
+            <h3>Order Summary</h3>
+
+            <div class="order-items-success">
+              <div class="order-item-success">
+                <img
+                  src="https://images.unsplash.com/photo-1584263347414-078852021b6c?w=60&h=60&fit=crop"
+                  alt="Product"
+                />
+                <div class="item-details">
+                  <h4>Premium Glass Oil Dispenser (500ml)</h4>
+                  <p class="item-meta">Quantity: 1 | Color: Clear</p>
+                </div>
+                <span class="item-price">₹399</span>
+              </div>
+
+              <div class="order-item-success">
+                <img
+                  src="https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=60&h=60&fit=crop"
+                  alt="Product"
+                />
+                <div class="item-details">
+                  <h4>Portable Mini Blender</h4>
+                  <p class="item-meta">Quantity: 2 | Color: Black</p>
+                </div>
+                <span class="item-price">₹1,198</span>
+              </div>
+
+              <div class="order-item-success">
+                <img
+                  src="https://images.unsplash.com/photo-1587033411391-5d9e51cce126?w=60&h=60&fit=crop"
+                  alt="Product"
+                />
+                <div class="item-details">
+                  <h4>360° Rotating Mobile Holder</h4>
+                  <p class="item-meta">Quantity: 1 | Color: Black</p>
+                </div>
+                <span class="item-price">₹299</span>
+              </div>
+            </div>
+
+            <div class="order-totals-success">
+              <div class="total-row">
+                <span>Subtotal</span>
+                <span>₹1,896</span>
+              </div>
+              <div class="total-row">
+                <span>Shipping</span>
+                <span>₹0</span>
+              </div>
+              <div class="total-row discount">
+                <span>Discount (PREPAID10)</span>
+                <span>-₹190</span>
+              </div>
+              <div class="total-row grand-total">
+                <span>Total Paid</span>
+                <span>₹1,706</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shipping Address -->
+          <div class="shipping-address-success">
+            <h3><i class="fas fa-map-marker-alt"></i> Shipping Address</h3>
+            <p><strong>Rahul Kapoor</strong></p>
+            <p>123, Green Park Extension</p>
+            <p>New Delhi - 110016</p>
+            <p>Phone: +91 98765 43210</p>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="success-actions">
+            <a href="track-order.html" class="btn btn-primary">
+              <i class="fas fa-truck"></i> Track Order
+            </a>
+            <a href="account.html" class="btn btn-outline">
+              <i class="fas fa-user"></i> View Order in Account
+            </a>
+            <a href="category.html" class="btn btn-outline">
+              <i class="fas fa-shopping-bag"></i> Continue Shopping
+            </a>
+          </div>
+
+          <!-- Download Invoice -->
+          <div class="download-invoice">
+            <a href="#" class="invoice-link">
+              <i class="fas fa-download"></i> Download Invoice (PDF)
+            </a>
+          </div>
+        </div>
+
+        <!-- Order Updates Section -->
+        <div class="order-updates-section">
+          <h2>Get Order Updates</h2>
+          <p>
+            We'll keep you updated via SMS and Email about your order status.
+          </p>
+
+          <div class="update-methods">
+            <div class="update-method">
+              <i class="fas fa-envelope"></i>
+              <h4>Email Updates</h4>
+              <p>Order confirmation sent to your email</p>
+            </div>
+
+            <div class="update-method">
+              <i class="fas fa-sms"></i>
+              <h4>SMS Alerts</h4>
+              <p>Track your order via SMS</p>
+            </div>
+
+            <div class="update-method">
+              <i class="fab fa-whatsapp"></i>
+              <h4>WhatsApp</h4>
+              <p>Get updates on WhatsApp</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommended Products -->
+        <section class="recommended-products">
+          <h2>You May Also Like</h2>
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1584263347414-078852021b6c?w=300&h=300&fit=crop"
+                  alt="Oil Set"
+                />
+                <div class="product-actions">
+                  <button class="action-btn">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="action-btn"><i class="fas fa-eye"></i></button>
+                  <button class="action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Glass Oil Dispenser Set of 3</h3>
+                <div class="product-price">
+                  <span class="current-price">₹999</span>
+                  <span class="old-price">₹2499</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=300&h=300&fit=crop"
+                  alt="Spice Jars"
+                />
+                <div class="product-actions">
+                  <button class="action-btn">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="action-btn"><i class="fas fa-eye"></i></button>
+                  <button class="action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Glass Spice Jars (6 pcs)</h3>
+                <div class="product-price">
+                  <span class="current-price">₹599</span>
+                  <span class="old-price">₹1499</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1584263347414-078852021b6c?w=300&h=300&fit=crop&rot=90"
+                  alt="Oil Can"
+                />
+                <div class="product-actions">
+                  <button class="action-btn">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="action-btn"><i class="fas fa-eye"></i></button>
+                  <button class="action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Stainless Steel Oil Can</h3>
+                <div class="product-price">
+                  <span class="current-price">₹449</span>
+                  <span class="old-price">₹899</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=300&h=300&fit=crop"
+                  alt="Kitchen Set"
+                />
+                <div class="product-actions">
+                  <button class="action-btn">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="action-btn"><i class="fas fa-eye"></i></button>
+                  <button class="action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Kitchen Organizer Set</h3>
+                <div class="product-price">
+                  <span class="current-price">₹1299</span>
+                  <span class="old-price">₹2999</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Need Help -->
+        <div class="need-help-success">
+          <h3>Need Help With Your Order?</h3>
+          <p>Our customer support team is here to assist you 24/7.</p>
+          <div class="help-options">
+            <a href="contact.html" class="btn btn-outline">
+              <i class="fas fa-envelope"></i> Contact Us
+            </a>
+            <a href="faq.html" class="btn btn-outline">
+              <i class="fas fa-question-circle"></i> FAQ
+            </a>
+            <a href="tel:+919876543210" class="btn btn-outline">
+              <i class="fas fa-phone"></i> Call Support
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <img
+              src="/images/vertexn_upscale.png"
+              alt="Vertexn"
+              class="footer-logo"
+            />
+            <p class="footer-tagline">Shop · Smile · Repeat</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="track-order.html">Track Order</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="offers.html">Offers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="category.html?cat=kitchen">Kitchen Storage</a></li>
+              <li><a href="category.html?cat=bathroom">Bathroom Racks</a></li>
+              <li><a href="category.html?cat=gym">Gym Accessories</a></li>
+              <li><a href="category.html?cat=mobile">Mobile Holders</a></li>
+              <li><a href="category.html?cat=home">Home Essentials</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="shipping-policy.html">Shipping Policy</a></li>
+              <li><a href="return-policy.html">Return Policy</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul class="contact-info">
+              <li><i class="fas fa-envelope"></i> support@vertexn.com</li>
+              <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Surat, Gujarat, India
+              </li>
+            </ul>
+            <div class="payment-methods">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-amex"></i>
+              <i class="fab fa-cc-paypal"></i>
+              <i class="fas fa-credit-card"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Vertexn. All rights reserved. Powered by Shopify</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <style>
+      /* Order Success Page Specific Styles */
+      .order-success-section {
+        padding: 4rem 0;
+        background: var(--bg-light);
+      }
+
+      .success-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: var(--white);
+        border-radius: 16px;
+        padding: 3rem;
+        box-shadow: var(--shadow);
+        text-align: center;
+      }
+
+      .success-icon {
+        margin-bottom: 2rem;
+      }
+
+      .success-icon i {
+        font-size: 5rem;
+        color: var(--success-color);
+        animation: scaleIn 0.5s ease;
+      }
+
+      @keyframes scaleIn {
+        from {
+          transform: scale(0);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .success-container h1 {
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+      }
+
+      .success-container .success-message {
+        color: var(--text-light);
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+      }
+
+      .order-info-card {
+        background: var(--bg-light);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+
+      .order-number {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .order-number span {
+        color: var(--text-light);
+      }
+
+      .order-number strong {
+        font-size: 1.2rem;
+        color: var(--primary-color);
+      }
+
+      .order-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+
+      .detail-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .detail-item i {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(
+          45deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 1rem;
+      }
+
+      .detail-item .label {
+        display: block;
+        font-size: 0.75rem;
+        color: var(--text-light);
+        margin-bottom: 0.25rem;
+      }
+
+      .detail-item .value {
+        display: block;
+        font-weight: 600;
+        color: var(--text-color);
+      }
+
+      .order-summary-success {
+        background: var(--bg-light);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+
+      .order-summary-success h3 {
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .order-items-success {
+        margin-bottom: 1.5rem;
+      }
+
+      .order-item-success {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .order-item-success:last-child {
+        border-bottom: none;
+      }
+
+      .order-item-success img {
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .order-item-success .item-details {
+        flex: 1;
+      }
+
+      .order-item-success .item-details h4 {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .order-item-success .item-meta {
+        font-size: 0.75rem;
+        color: var(--text-light);
+        margin: 0;
+      }
+
+      .order-item-success .item-price {
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+
+      .order-totals-success {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 2px solid var(--border-color);
+      }
+
+      .order-totals-success .total-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        color: var(--text-light);
+      }
+
+      .order-totals-success .total-row.discount {
+        color: var(--success-color);
+      }
+
+      .order-totals-success .grand-total {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--text-color);
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        border-top: 1px solid var(--border-color);
+      }
+
+      .shipping-address-success {
+        background: var(--bg-light);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+
+      .shipping-address-success h3 {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+      }
+
+      .shipping-address-success p {
+        margin-bottom: 0.25rem;
+      }
+
+      .success-actions {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .download-invoice {
+        margin-bottom: 2rem;
+      }
+
+      .invoice-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--primary-color);
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: var(--transition);
+      }
+
+      .invoice-link:hover {
+        background: var(--bg-light);
+        text-decoration: underline;
+      }
+
+      .order-updates-section {
+        max-width: 800px;
+        margin: 3rem auto;
+        text-align: center;
+      }
+
+      .order-updates-section h2 {
+        margin-bottom: 0.5rem;
+      }
+
+      .order-updates-section p {
+        margin-bottom: 2rem;
+      }
+
+      .update-methods {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+
+      .update-method {
+        padding: 1.5rem;
+        background: var(--white);
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+      }
+
+      .update-method:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .update-method i {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+      }
+
+      .update-method h4 {
+        margin-bottom: 0.5rem;
+      }
+
+      .update-method p {
+        margin: 0;
+        font-size: 0.875rem;
+      }
+
+      .recommended-products {
+        margin-top: 4rem;
+      }
+
+      .recommended-products h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .need-help-success {
+        max-width: 800px;
+        margin: 4rem auto 0;
+        text-align: center;
+        padding: 2rem;
+        background: linear-gradient(
+          45deg,
+          rgba(102, 126, 234, 0.1),
+          rgba(118, 75, 162, 0.1)
+        );
+        border-radius: 16px;
+      }
+
+      .need-help-success h3 {
+        margin-bottom: 0.5rem;
+      }
+
+      .need-help-success p {
+        margin-bottom: 1.5rem;
+      }
+
+      .help-options {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .success-container {
+          padding: 2rem;
+        }
+
+        .order-details {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+
+        .order-number {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem;
+        }
+
+        .success-actions {
+          flex-direction: column;
+        }
+
+        .update-methods {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+
+        .help-options {
+          flex-direction: column;
+        }
+
+        .help-options .btn {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .success-container {
+          padding: 1.5rem;
+        }
+
+        .order-item-success {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .order-item-success .item-price {
+          margin-top: 0.5rem;
+        }
+      }
+    </style>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Print invoice functionality
+      document
+        .querySelector(".invoice-link")
+        ?.addEventListener("click", function (e) {
+          e.preventDefault();
+          alert("Invoice PDF would be downloaded here. Demo version.");
+        });
+
+      // Track order button
+      document
+        .querySelector(".btn-primary")
+        ?.addEventListener("click", function (e) {
+          // Already linked to track-order.html
+        });
+
+      // Countdown animation for success icon
+      setTimeout(() => {
+        const icon = document.querySelector(".success-icon i");
+        if (icon) {
+          icon.style.transform = "scale(1.1)";
+          setTimeout(() => {
+            icon.style.transform = "scale(1)";
+          }, 200);
+        }
+      }, 500);
+    </script>
+  </body>
+</html>

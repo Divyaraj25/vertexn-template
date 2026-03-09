@@ -1,0 +1,1089 @@
+<!-- category.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories - Vertexn</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+      <div class="container">
+        <div class="announcement-carousel">
+          <div class="announcement-item active">
+            🚚 Free Shipping on orders above ₹499
+          </div>
+          <div class="announcement-item">
+            🎉 New Year Sale: Flat 20% Off - Use Code: VERTEXN20
+          </div>
+          <div class="announcement-item">⭐ 10,000+ Happy Customers</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <div class="logo">
+            <a href="index.html"
+              ><img src="/images/vertexn_upscale.png" alt="Vertexn"
+            /></a>
+          </div>
+
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="category.html" class="active"
+                  >Categories <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li><a href="#kitchen">Kitchen Essentials</a></li>
+                  <li><a href="#bathroom">Bathroom Storage</a></li>
+                  <li><a href="#gym">Gym Accessories</a></li>
+                  <li><a href="#mobile">Mobile Accessories</a></li>
+                  <li><a href="#new">New Arrivals</a></li>
+                  <li><a href="#sale">Sale %</a></li>
+                </ul>
+              </li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <a href="#" class="search-toggle"><i class="fas fa-search"></i></a>
+            <a href="account.html"><i class="fas fa-user"></i></a>
+            <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+            <a href="cart.html" class="cart-icon">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="cart-count">3</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1>Shop by Category</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> / <span>Categories</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="category-filters">
+      <div class="container">
+        <div class="filters-wrapper">
+          <div class="filter-group">
+            <label>Sort by:</label>
+            <select class="filter-select" id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="newest">Newest First</option>
+              <option value="bestselling">Best Selling</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Show:</label>
+            <select class="filter-select" id="perPageSelect">
+              <option value="24">24 per page</option>
+              <option value="48">48 per page</option>
+              <option value="72">72 per page</option>
+            </select>
+          </div>
+          <div class="filter-buttons">
+            <button class="filter-toggle btn btn-outline" id="filterToggle">
+              <i class="fas fa-filter"></i> Filters
+            </button>
+            <button class="grid-toggle active" id="gridViewBtn">
+              <i class="fas fa-th"></i>
+            </button>
+            <button class="list-toggle" id="listViewBtn">
+              <i class="fas fa-list"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Content -->
+    <section class="category-content">
+      <div class="container">
+        <div class="category-wrapper">
+          <!-- Sidebar Filters -->
+          <aside class="category-sidebar" id="categorySidebar">
+            <div class="filter-section">
+              <h3>Categories</h3>
+              <ul class="filter-list">
+                <li>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="category-filter"
+                      value="kitchen"
+                    />
+                    Kitchen Essentials (45)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="category-filter"
+                      value="bathroom"
+                    />
+                    Bathroom Storage (32)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="category-filter"
+                      value="gym"
+                    />
+                    Gym Accessories (28)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="category-filter"
+                      value="mobile"
+                    />
+                    Mobile Accessories (56)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="category-filter"
+                      value="home"
+                    />
+                    Home Decor (23)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="category-filter"
+                      value="health"
+                    />
+                    Health & Wellness (17)</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="filter-section">
+              <h3>Price Range</h3>
+              <div class="price-range">
+                <input
+                  type="range"
+                  min="0"
+                  max="5000"
+                  value="2500"
+                  class="price-slider"
+                  id="priceSlider"
+                />
+                <div class="price-inputs">
+                  <input
+                    type="number"
+                    placeholder="Min"
+                    value="0"
+                    id="minPrice"
+                  />
+                  <span>-</span>
+                  <input
+                    type="number"
+                    placeholder="Max"
+                    value="5000"
+                    id="maxPrice"
+                  />
+                </div>
+                <button class="btn btn-small btn-primary" id="applyPriceFilter">
+                  Apply
+                </button>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h3>Rating</h3>
+              <ul class="filter-list">
+                <li>
+                  <label
+                    ><input type="checkbox" class="rating-filter" value="4" />
+                    ★★★★☆ & Up (124)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" class="rating-filter" value="3" />
+                    ★★★☆☆ & Up (256)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" class="rating-filter" value="2" />
+                    ★★☆☆☆ & Up (312)</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="filter-section">
+              <h3>Discount</h3>
+              <ul class="filter-list">
+                <li>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="discount-filter"
+                      value="50"
+                    />
+                    50% or more (45)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="discount-filter"
+                      value="40"
+                    />
+                    40% or more (89)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="discount-filter"
+                      value="30"
+                    />
+                    30% or more (156)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="discount-filter"
+                      value="20"
+                    />
+                    20% or more (234)</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="filter-section">
+              <h3>Availability</h3>
+              <ul class="filter-list">
+                <li>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="stock-filter"
+                      value="in-stock"
+                    />
+                    In Stock (345)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="stock-filter"
+                      value="out-of-stock"
+                    />
+                    Out of Stock (23)</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn-small btn-outline" id="clearFilters">
+              Clear All Filters
+            </button>
+          </aside>
+
+          <!-- Products Grid/List -->
+          <div class="category-products">
+            <div class="products-container" id="productsContainer">
+              <!-- Products will be dynamically populated by JavaScript -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+              <!-- Pagination will be dynamically populated -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <img
+              src="/images/vertexn_upscale.png"
+              alt="Vertexn"
+              class="footer-logo"
+            />
+            <p class="footer-tagline">Shop · Smile · Repeat</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="track-order.html">Track Order</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="offers.html">Offers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="category.html?cat=kitchen">Kitchen Storage</a></li>
+              <li><a href="category.html?cat=bathroom">Bathroom Racks</a></li>
+              <li><a href="category.html?cat=gym">Gym Accessories</a></li>
+              <li><a href="category.html?cat=mobile">Mobile Holders</a></li>
+              <li><a href="category.html?cat=home">Home Essentials</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="shipping-policy.html">Shipping Policy</a></li>
+              <li><a href="return-policy.html">Return Policy</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul class="contact-info">
+              <li><i class="fas fa-envelope"></i> support@vertexn.com</li>
+              <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Surat, Gujarat, India
+              </li>
+            </ul>
+            <div class="payment-methods">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-amex"></i>
+              <i class="fab fa-cc-paypal"></i>
+              <i class="fas fa-credit-card"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Vertexn. All rights reserved. Powered by Shopify</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Category Page JavaScript
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sample product data
+        const products = [
+          {
+            id: 1,
+            name: "Premium Glass Oil Dispenser (500ml)",
+            category: "kitchen",
+            price: 399,
+            oldPrice: 999,
+            discount: 60,
+            rating: 4.5,
+            reviews: 245,
+            badge: "Best Seller",
+            image:
+              "https://images.unsplash.com/photo-1584263347414-078852021b6c?w=300&h=300&fit=crop",
+            stock: "in-stock",
+            description:
+              "High-quality glass oil dispenser with stainless steel pourer.",
+          },
+          {
+            id: 2,
+            name: "Portable Mini Blender - USB Rechargeable",
+            category: "kitchen",
+            price: 599,
+            oldPrice: 999,
+            discount: 40,
+            rating: 5,
+            reviews: 678,
+            badge: "sale",
+            image:
+              "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=300&h=300&fit=crop",
+            stock: "in-stock",
+            description:
+              "Make smoothies anywhere with this portable USB blender.",
+          },
+          {
+            id: 3,
+            name: "360° Rotating Magnetic Mobile Holder",
+            category: "mobile",
+            price: 299,
+            oldPrice: 599,
+            discount: 50,
+            rating: 4,
+            reviews: 89,
+            badge: "New",
+            image:
+              "https://images.unsplash.com/photo-1587033411391-5d9e51cce126?w=300&h=300&fit=crop",
+            stock: "in-stock",
+            description: "Strong magnetic grip for cars, desks, and more.",
+          },
+          {
+            id: 4,
+            name: "Electric Lint Remover - Rechargeable",
+            category: "home",
+            price: 449,
+            oldPrice: 899,
+            discount: 50,
+            rating: 5,
+            reviews: 432,
+            badge: "",
+            image:
+              "https://images.unsplash.com/photo-1626806787461-102c1bf0795c?w=300&h=300&fit=crop",
+            stock: "in-stock",
+            description: "Quickly remove lint, fuzz, and pills from clothes.",
+          },
+          {
+            id: 5,
+            name: "Stainless Steel Kitchen Rack - 3 Tier",
+            category: "kitchen",
+            price: 799,
+            oldPrice: 1599,
+            discount: 50,
+            rating: 4.5,
+            reviews: 156,
+            badge: "",
+            image:
+              "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=300&h=300&fit=crop",
+            stock: "in-stock",
+            description: "Organize your kitchen with this sturdy steel rack.",
+          },
+          {
+            id: 6,
+            name: "USB Neckband Fan - Portable & Rechargeable",
+            category: "electronics",
+            price: 399,
+            oldPrice: 799,
+            discount: 50,
+            rating: 4,
+            reviews: 98,
+            badge: "Trending",
+            image:
+              "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=300&h=300&fit=crop",
+            stock: "limited",
+            description: "Hands-free cooling with adjustable speed settings.",
+          },
+          {
+            id: 7,
+            name: "Gym Shaker Bottle - 700ml with Compartment",
+            category: "gym",
+            price: 249,
+            oldPrice: 499,
+            discount: 50,
+            rating: 5,
+            reviews: 312,
+            badge: "",
+            image:
+              "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=300&h=300&fit=crop",
+            stock: "in-stock",
+            description:
+              "Perfect for protein shakes with built-in compartment.",
+          },
+          {
+            id: 8,
+            name: "Acupressure Slippers for Pain Relief",
+            category: "health",
+            price: 349,
+            oldPrice: 999,
+            discount: 65,
+            rating: 4.5,
+            reviews: 567,
+            badge: "",
+            image:
+              "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=300&h=300&fit=crop",
+            stock: "in-stock",
+            description: "Relieve foot pain with acupressure points.",
+          },
+          {
+            id: 9,
+            name: "Bathroom Corner Rack - Stainless Steel",
+            category: "bathroom",
+            price: 299,
+            oldPrice: 599,
+            discount: 50,
+            rating: 4,
+            reviews: 134,
+            badge: "",
+            image:
+              "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=300&h=300&fit=crop",
+            stock: "in-stock",
+            description: "Space-saving corner rack for bathroom organization.",
+          },
+          {
+            id: 10,
+            name: "360° Rotating Hook - Set of 2",
+            category: "home",
+            price: 199,
+            oldPrice: 399,
+            discount: 50,
+            rating: 5,
+            reviews: 89,
+            badge: "Limited",
+            image:
+              "https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?w=300&h=300&fit=crop",
+            stock: "limited",
+            description: "Multi-purpose rotating hooks for hanging items.",
+          },
+          {
+            id: 11,
+            name: "Gym Keychain - Motivational (Pack of 5)",
+            category: "gym",
+            price: 149,
+            oldPrice: 299,
+            discount: 50,
+            rating: 4.5,
+            reviews: 67,
+            badge: "",
+            image:
+              "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=300&h=300&fit=crop",
+            stock: "in-stock",
+            description: "Inspirational keychains for fitness enthusiasts.",
+          },
+          {
+            id: 12,
+            name: "Gym Duffle Bag - Waterproof",
+            category: "gym",
+            price: 599,
+            oldPrice: 1199,
+            discount: 50,
+            rating: 4,
+            reviews: 234,
+            badge: "",
+            image:
+              "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=300&fit=crop",
+            stock: "in-stock",
+            description: "Spacious waterproof bag for gym and travel.",
+          },
+        ];
+
+        let currentView = "grid";
+        let currentPage = 1;
+        let itemsPerPage = 24;
+        let filteredProducts = [...products];
+
+        // DOM Elements
+        const productsContainer = document.getElementById("productsContainer");
+        const gridViewBtn = document.getElementById("gridViewBtn");
+        const listViewBtn = document.getElementById("listViewBtn");
+        const sortSelect = document.getElementById("sortSelect");
+        const perPageSelect = document.getElementById("perPageSelect");
+        const filterToggle = document.getElementById("filterToggle");
+        const sidebar = document.getElementById("categorySidebar");
+        const clearFiltersBtn = document.getElementById("clearFilters");
+        const priceSlider = document.getElementById("priceSlider");
+        const minPrice = document.getElementById("minPrice");
+        const maxPrice = document.getElementById("maxPrice");
+        const applyPriceFilter = document.getElementById("applyPriceFilter");
+
+        // Initialize
+        renderProducts();
+
+        // Grid/List View Toggle
+        gridViewBtn.addEventListener("click", function () {
+          currentView = "grid";
+          gridViewBtn.classList.add("active");
+          listViewBtn.classList.remove("active");
+          productsContainer.className = "products-grid";
+          renderProducts();
+        });
+
+        listViewBtn.addEventListener("click", function () {
+          currentView = "list";
+          listViewBtn.classList.add("active");
+          gridViewBtn.classList.remove("active");
+          productsContainer.className = "products-list";
+          renderProducts();
+        });
+
+        // Sort functionality
+        sortSelect.addEventListener("change", function () {
+          const sortBy = this.value;
+
+          switch (sortBy) {
+            case "price-low":
+              filteredProducts.sort((a, b) => a.price - b.price);
+              break;
+            case "price-high":
+              filteredProducts.sort((a, b) => b.price - a.price);
+              break;
+            case "newest":
+              // For demo, reverse the array
+              filteredProducts.reverse();
+              break;
+            case "bestselling":
+              filteredProducts.sort((a, b) => b.reviews - a.reviews);
+              break;
+            default:
+              // featured - keep original order
+              filteredProducts = [...products];
+              applyFilters();
+          }
+
+          renderProducts();
+        });
+
+        // Per page change
+        perPageSelect.addEventListener("change", function () {
+          itemsPerPage = parseInt(this.value);
+          currentPage = 1;
+          renderProducts();
+        });
+
+        // Filter toggle for mobile
+        filterToggle.addEventListener("click", function () {
+          sidebar.classList.toggle("active");
+        });
+
+        // Category filters
+        document.querySelectorAll(".category-filter").forEach((checkbox) => {
+          checkbox.addEventListener("change", applyFilters);
+        });
+
+        document.querySelectorAll(".rating-filter").forEach((checkbox) => {
+          checkbox.addEventListener("change", applyFilters);
+        });
+
+        document.querySelectorAll(".discount-filter").forEach((checkbox) => {
+          checkbox.addEventListener("change", applyFilters);
+        });
+
+        document.querySelectorAll(".stock-filter").forEach((checkbox) => {
+          checkbox.addEventListener("change", applyFilters);
+        });
+
+        // Price filter
+        applyPriceFilter.addEventListener("click", function () {
+          const min = parseInt(minPrice.value) || 0;
+          const max = parseInt(maxPrice.value) || 5000;
+
+          filteredProducts = products.filter(
+            (product) => product.price >= min && product.price <= max
+          );
+
+          // Apply other active filters
+          applyFilters();
+        });
+
+        priceSlider.addEventListener("input", function () {
+          maxPrice.value = this.value;
+        });
+
+        // Clear all filters
+        clearFiltersBtn.addEventListener("click", function () {
+          document
+            .querySelectorAll('.filter-list input[type="checkbox"]')
+            .forEach((cb) => {
+              cb.checked = false;
+            });
+          minPrice.value = 0;
+          maxPrice.value = 5000;
+          priceSlider.value = 5000;
+
+          filteredProducts = [...products];
+          renderProducts();
+        });
+
+        function applyFilters() {
+          let filtered = [...products];
+
+          // Category filter
+          const selectedCategories = Array.from(
+            document.querySelectorAll(".category-filter:checked")
+          ).map((cb) => cb.value);
+          if (selectedCategories.length > 0) {
+            filtered = filtered.filter((product) =>
+              selectedCategories.includes(product.category)
+            );
+          }
+
+          // Rating filter
+          const selectedRatings = Array.from(
+            document.querySelectorAll(".rating-filter:checked")
+          ).map((cb) => parseInt(cb.value));
+          if (selectedRatings.length > 0) {
+            filtered = filtered.filter((product) => {
+              return selectedRatings.some((rating) => product.rating >= rating);
+            });
+          }
+
+          // Discount filter
+          const selectedDiscounts = Array.from(
+            document.querySelectorAll(".discount-filter:checked")
+          ).map((cb) => parseInt(cb.value));
+          if (selectedDiscounts.length > 0) {
+            filtered = filtered.filter((product) => {
+              return selectedDiscounts.some(
+                (discount) => product.discount >= discount
+              );
+            });
+          }
+
+          // Stock filter
+          const selectedStock = Array.from(
+            document.querySelectorAll(".stock-filter:checked")
+          ).map((cb) => cb.value);
+          if (selectedStock.length > 0) {
+            filtered = filtered.filter((product) =>
+              selectedStock.includes(product.stock)
+            );
+          }
+
+          // Price filter
+          const min = parseInt(minPrice.value) || 0;
+          const max = parseInt(maxPrice.value) || 5000;
+          filtered = filtered.filter(
+            (product) => product.price >= min && product.price <= max
+          );
+
+          filteredProducts = filtered;
+
+          // Apply current sort
+          const sortBy = sortSelect.value;
+          switch (sortBy) {
+            case "price-low":
+              filteredProducts.sort((a, b) => a.price - b.price);
+              break;
+            case "price-high":
+              filteredProducts.sort((a, b) => b.price - a.price);
+              break;
+            case "bestselling":
+              filteredProducts.sort((a, b) => b.reviews - a.reviews);
+              break;
+          }
+
+          currentPage = 1;
+          renderProducts();
+        }
+
+        function renderProducts() {
+          const start = (currentPage - 1) * itemsPerPage;
+          const end = start + itemsPerPage;
+          const paginatedProducts = filteredProducts.slice(start, end);
+
+          if (currentView === "grid") {
+            renderGridView(paginatedProducts);
+          } else {
+            renderListView(paginatedProducts);
+          }
+
+          renderPagination();
+        }
+
+        function renderGridView(products) {
+          let html = "";
+
+          products.forEach((product) => {
+            html += `
+              <div class="product-card">
+                ${
+                  product.badge
+                    ? `<div class="product-badge ${
+                        product.badge === "sale" ? "sale" : ""
+                      }">${product.badge}</div>`
+                    : ""
+                }
+                <div class="product-image">
+                  <img src="${product.image}" alt="${product.name}">
+                  <div class="product-actions">
+                    <button class="action-btn"><i class="far fa-heart"></i></button>
+                    <button class="action-btn"><i class="fas fa-eye"></i></button>
+                    <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">${product.name}</h3>
+                  <div class="product-rating">
+                    ${getStarRating(product.rating)}
+                    <span>(${product.reviews})</span>
+                  </div>
+                  <div class="product-price">
+                    <span class="current-price">₹${product.price}</span>
+                    <span class="old-price">₹${product.oldPrice}</span>
+                    <span class="discount">-${product.discount}%</span>
+                  </div>
+                </div>
+              </div>
+            `;
+          });
+
+          productsContainer.innerHTML = html;
+        }
+
+        function renderListView(products) {
+          let html = "";
+
+          products.forEach((product) => {
+            html += `
+              <div class="product-card-list">
+                ${
+                  product.badge
+                    ? `<div class="product-badge ${
+                        product.badge === "sale" ? "sale" : ""
+                      }">${product.badge}</div>`
+                    : ""
+                }
+                <div class="product-list-image">
+                  <img src="${product.image}" alt="${product.name}">
+                </div>
+                <div class="product-list-info">
+                  <h3 class="product-title">${product.name}</h3>
+                  <div class="product-rating">
+                    ${getStarRating(product.rating)}
+                    <span>(${product.reviews} reviews)</span>
+                  </div>
+                  <p class="product-description">${product.description}</p>
+                  <div class="product-price">
+                    <span class="current-price">₹${product.price}</span>
+                    <span class="old-price">₹${product.oldPrice}</span>
+                    <span class="discount">-${product.discount}%</span>
+                  </div>
+                  <div class="product-stock ${
+                    product.stock === "limited" ? "limited" : ""
+                  }">
+                    <i class="fas ${
+                      product.stock === "in-stock"
+                        ? "fa-check-circle"
+                        : "fa-exclamation-circle"
+                    }"></i> 
+                    ${
+                      product.stock === "in-stock"
+                        ? "In Stock"
+                        : "Only few left"
+                    }
+                  </div>
+                  <div class="product-list-actions">
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    <button class="btn btn-outline"><i class="far fa-heart"></i> Wishlist</button>
+                  </div>
+                </div>
+              </div>
+            `;
+          });
+
+          productsContainer.innerHTML = html;
+        }
+
+        function getStarRating(rating) {
+          let stars = "";
+          for (let i = 1; i <= 5; i++) {
+            if (i <= rating) {
+              stars += '<i class="fas fa-star"></i>';
+            } else if (i - 0.5 === rating) {
+              stars += '<i class="fas fa-star-half-alt"></i>';
+            } else {
+              stars += '<i class="far fa-star"></i>';
+            }
+          }
+          return stars;
+        }
+
+        function renderPagination() {
+          const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+          const paginationEl = document.getElementById("pagination");
+
+          if (totalPages <= 1) {
+            paginationEl.innerHTML = "";
+            return;
+          }
+
+          let paginationHtml = "";
+
+          for (let i = 1; i <= totalPages; i++) {
+            if (
+              i === 1 ||
+              i === totalPages ||
+              (i >= currentPage - 2 && i <= currentPage + 2)
+            ) {
+              paginationHtml += `<a href="#" class="page-link ${
+                i === currentPage ? "active" : ""
+              }" data-page="${i}">${i}</a>`;
+            } else if (i === currentPage - 3 || i === currentPage + 3) {
+              paginationHtml += '<span class="page-dots">...</span>';
+            }
+          }
+
+          if (currentPage < totalPages) {
+            paginationHtml += `<a href="#" class="page-next" data-page="${
+              currentPage + 1
+            }"><i class="fas fa-chevron-right"></i></a>`;
+          }
+
+          paginationEl.innerHTML = paginationHtml;
+
+          // Add pagination click handlers
+          document
+            .querySelectorAll(".page-link, .page-next")
+            .forEach((link) => {
+              link.addEventListener("click", function (e) {
+                e.preventDefault();
+                const page = this.dataset.page;
+                if (page) {
+                  currentPage = parseInt(page);
+                  renderProducts();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+              });
+            });
+        }
+
+        // Close sidebar when clicking outside on mobile
+        document.addEventListener("click", function (e) {
+          if (window.innerWidth <= 768) {
+            if (
+              !sidebar.contains(e.target) &&
+              !filterToggle.contains(e.target)
+            ) {
+              sidebar.classList.remove("active");
+            }
+          }
+        });
+      });
+    </script>
+
+    <style>
+      /* List View Styles */
+      .products-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .product-card-list {
+        display: flex;
+        gap: 2rem;
+        padding: 1.5rem;
+        background: var(--white);
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        position: relative;
+        transition: var(--transition);
+      }
+
+      .product-card-list:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .product-list-image {
+        width: 200px;
+        flex-shrink: 0;
+      }
+
+      .product-list-image img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .product-list-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .product-description {
+        color: var(--text-light);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .product-list-actions {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .product-list-actions .btn {
+        flex: 0 1 auto;
+      }
+
+      @media (max-width: 768px) {
+        .product-card-list {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .product-list-image {
+          width: 100%;
+        }
+
+        .product-list-actions {
+          flex-direction: column;
+        }
+
+        .product-list-actions .btn {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .product-card-list {
+          padding: 1rem;
+        }
+      }
+    </style>
+  </body>
+</html>

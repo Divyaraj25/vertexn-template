@@ -1,0 +1,423 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - Vertexn</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+      <div class="container">
+        <div class="announcement-carousel">
+          <div class="announcement-item active">
+            🚚 Free Shipping on orders above ₹499
+          </div>
+          <div class="announcement-item">
+            🎉 New Year Sale: Flat 20% Off - Use Code: VERTEXN20
+          </div>
+          <div class="announcement-item">⭐ 10,000+ Happy Customers</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <div class="logo">
+            <a href="index.html"
+              ><img src="/images/vertexn_upscale.png" alt="Vertexn"
+            /></a>
+          </div>
+
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="category.html">Categories</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <a href="#" class="search-toggle"><i class="fas fa-search"></i></a>
+            <a href="account.html"><i class="fas fa-user"></i></a>
+            <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+            <a href="cart.html" class="cart-icon active">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="cart-count">3</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1>Shopping Cart</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> / <span>Cart</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+      <div class="container">
+        <div class="cart-wrapper">
+          <!-- Cart Items -->
+          <div class="cart-items">
+            <div class="cart-header">
+              <div class="cart-header-product">Product</div>
+              <div class="cart-header-price">Price</div>
+              <div class="cart-header-quantity">Quantity</div>
+              <div class="cart-header-total">Total</div>
+              <div class="cart-header-remove"></div>
+            </div>
+
+            <!-- Cart Item 1 -->
+            <div class="cart-item">
+              <div class="cart-item-product">
+                <div class="cart-item-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1584263347414-078852021b6c?w=100&h=100&fit=crop"
+                    alt="Oil Dispenser"
+                  />
+                </div>
+                <div class="cart-item-details">
+                  <h4>Premium Glass Oil Dispenser (500ml)</h4>
+                  <p class="cart-item-variant">
+                    Color: Clear Glass | Size: 500ml
+                  </p>
+                  <p class="cart-item-sku">SKU: VK-OD-001</p>
+                </div>
+              </div>
+              <div class="cart-item-price">₹399</div>
+              <div class="cart-item-quantity">
+                <div class="quantity-controls">
+                  <button class="quantity-btn cart-decrease">-</button>
+                  <input
+                    type="number"
+                    class="quantity-input cart-quantity"
+                    value="1"
+                    min="1"
+                    readonly
+                  />
+                  <button class="quantity-btn cart-increase">+</button>
+                </div>
+              </div>
+              <div class="cart-item-total">₹399</div>
+              <div class="cart-item-remove">
+                <button class="remove-item">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Cart Item 2 -->
+            <div class="cart-item">
+              <div class="cart-item-product">
+                <div class="cart-item-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=100&h=100&fit=crop"
+                    alt="Mini Blender"
+                  />
+                </div>
+                <div class="cart-item-details">
+                  <h4>Portable Mini Blender - USB Rechargeable</h4>
+                  <p class="cart-item-variant">Color: Black | Size: 400ml</p>
+                  <p class="cart-item-sku">SKU: VK-MB-002</p>
+                </div>
+              </div>
+              <div class="cart-item-price">₹599</div>
+              <div class="cart-item-quantity">
+                <div class="quantity-controls">
+                  <button class="quantity-btn cart-decrease">-</button>
+                  <input
+                    type="number"
+                    class="quantity-input cart-quantity"
+                    value="2"
+                    min="1"
+                    readonly
+                  />
+                  <button class="quantity-btn cart-increase">+</button>
+                </div>
+              </div>
+              <div class="cart-item-total">₹1,198</div>
+              <div class="cart-item-remove">
+                <button class="remove-item">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Cart Item 3 -->
+            <div class="cart-item">
+              <div class="cart-item-product">
+                <div class="cart-item-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1587033411391-5d9e51cce126?w=100&h=100&fit=crop"
+                    alt="Mobile Holder"
+                  />
+                </div>
+                <div class="cart-item-details">
+                  <h4>360° Rotating Magnetic Mobile Holder</h4>
+                  <p class="cart-item-variant">Color: Black</p>
+                  <p class="cart-item-sku">SKU: VK-MH-003</p>
+                </div>
+              </div>
+              <div class="cart-item-price">₹299</div>
+              <div class="cart-item-quantity">
+                <div class="quantity-controls">
+                  <button class="quantity-btn cart-decrease">-</button>
+                  <input
+                    type="number"
+                    class="quantity-input cart-quantity"
+                    value="1"
+                    min="1"
+                    readonly
+                  />
+                  <button class="quantity-btn cart-increase">+</button>
+                </div>
+              </div>
+              <div class="cart-item-total">₹299</div>
+              <div class="cart-item-remove">
+                <button class="remove-item">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Free Shipping Progress -->
+            <div class="free-shipping-progress">
+              <p>Add ₹102 more to get <strong>FREE Shipping</strong>!</p>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cart Summary -->
+          <div class="cart-summary">
+            <h3>Order Summary</h3>
+
+            <div class="summary-row">
+              <span>Subtotal (3 items)</span>
+              <span>₹1,896</span>
+            </div>
+
+            <div class="summary-row">
+              <span>Shipping</span>
+              <span>₹99</span>
+            </div>
+
+            <div class="summary-row discount">
+              <span>Discount (PREPAID10)</span>
+              <span>-₹190</span>
+            </div>
+
+            <div class="summary-row total">
+              <span>Total</span>
+              <span>₹1,805</span>
+            </div>
+
+            <p class="tax-info">Inclusive of all taxes</p>
+
+            <div class="coupon-section">
+              <h4>Apply Coupon</h4>
+              <div class="coupon-input-group">
+                <input
+                  type="text"
+                  placeholder="Enter coupon code"
+                  class="coupon-input"
+                />
+                <button class="btn btn-outline apply-coupon">Apply</button>
+              </div>
+              <div class="available-coupons">
+                <p>
+                  <i class="fas fa-tag"></i> PREPAID10 - 10% off on prepaid
+                  orders
+                </p>
+                <p>
+                  <i class="fas fa-tag"></i> FIRST5 - Extra 5% off for new users
+                </p>
+              </div>
+            </div>
+
+            <div class="cart-actions">
+              <button class="btn btn-primary btn-large proceed-checkout">
+                Proceed to Checkout <i class="fas fa-arrow-right"></i>
+              </button>
+              <a href="category.html" class="continue-shopping">
+                <i class="fas fa-arrow-left"></i> Continue Shopping
+              </a>
+            </div>
+
+            <div class="payment-methods-cart">
+              <h4>We Accept</h4>
+              <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fas fa-credit-card"></i>
+              </div>
+            </div>
+
+            <div class="trust-badges-cart">
+              <div class="trust-item">
+                <i class="fas fa-lock"></i>
+                <span>Secure Payment</span>
+              </div>
+              <div class="trust-item">
+                <i class="fas fa-undo-alt"></i>
+                <span>15 Days Return</span>
+              </div>
+              <div class="trust-item">
+                <i class="fas fa-headset"></i>
+                <span>24/7 Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recently Viewed -->
+        <div class="recently-viewed-cart">
+          <h3>Recently Viewed</h3>
+          <div class="recent-products-grid">
+            <div class="recent-product">
+              <img
+                src="https://images.unsplash.com/photo-1626806787461-102c1bf0795c?w=80&h=80&fit=crop"
+                alt="Lint Remover"
+              />
+              <h4>Electric Lint Remover</h4>
+              <span class="price">₹449</span>
+            </div>
+            <div class="recent-product">
+              <img
+                src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=80&h=80&fit=crop"
+                alt="Storage Rack"
+              />
+              <h4>Kitchen Storage Rack</h4>
+              <span class="price">₹799</span>
+            </div>
+            <div class="recent-product">
+              <img
+                src="https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=80&h=80&fit=crop"
+                alt="Neck Fan"
+              />
+              <h4>USB Neckband Fan</h4>
+              <span class="price">₹399</span>
+            </div>
+            <div class="recent-product">
+              <img
+                src="https://images.unsplash.com/photo-1523362628745-0c100150b504?w=80&h=80&fit=crop"
+                alt="Gym Bottle"
+              />
+              <h4>Gym Shaker Bottle</h4>
+              <span class="price">₹249</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <img
+              src="/images/vertexn_upscale.png"
+              alt="Vertexn"
+              class="footer-logo"
+            />
+            <p class="footer-tagline">Shop · Smile · Repeat</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="track-order.html">Track Order</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="offers.html">Offers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="category.html?cat=kitchen">Kitchen Storage</a></li>
+              <li><a href="category.html?cat=bathroom">Bathroom Racks</a></li>
+              <li><a href="category.html?cat=gym">Gym Accessories</a></li>
+              <li><a href="category.html?cat=mobile">Mobile Holders</a></li>
+              <li><a href="category.html?cat=home">Home Essentials</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="shipping-policy.html">Shipping Policy</a></li>
+              <li><a href="return-policy.html">Return Policy</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul class="contact-info">
+              <li><i class="fas fa-envelope"></i> support@vertexn.com</li>
+              <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Surat, Gujarat, India
+              </li>
+            </ul>
+            <div class="payment-methods">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-amex"></i>
+              <i class="fab fa-cc-paypal"></i>
+              <i class="fas fa-credit-card"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Vertexn. All rights reserved. Powered by Shopify</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
