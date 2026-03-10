@@ -874,5 +874,255 @@
     </button>
 
     <script src="js/main.js"></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Tab switching functionality
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+    
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        // Remove active class from all buttons and panes
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabPanes.forEach(p => p.classList.remove('active'));
+        
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        // Get the tab id from data attribute
+        const tabId = this.dataset.tab;
+        
+        // Show corresponding tab pane
+        const activePane = document.getElementById(tabId);
+        if (activePane) {
+          activePane.classList.add('active');
+        }
+        
+        // Optional: Smooth scroll to tabs
+        document.querySelector('.product-tabs').scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+      });
+    });
+    
+    // FAQ Accordion functionality (for FAQ tab)
+    const faqQuestions = document.querySelectorAll('#faq .faq-question');
+    
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        faqItem.classList.toggle('active');
+        
+        // Optional: Close other open FAQs
+        // const otherItems = document.querySelectorAll('#faq .faq-item');
+        // otherItems.forEach(item => {
+        //   if (item !== faqItem) {
+        //     item.classList.remove('active');
+        //   }
+        // });
+      });
+    });
+    
+    // Thumbnail image click functionality
+    const thumbnails = document.querySelectorAll('.thumbnail-image');
+    const mainImage = document.querySelector('.main-product-image');
+    
+    thumbnails.forEach(thumb => {
+      thumb.addEventListener('click', function() {
+        // Remove active class from all thumbnails
+        thumbnails.forEach(t => t.classList.remove('active'));
+        
+        // Add active class to clicked thumbnail
+        this.classList.add('active');
+        
+        // Update main image
+        const imageUrl = this.dataset.image;
+        if (mainImage && imageUrl) {
+          mainImage.src = imageUrl;
+        }
+      });
+    });
+    
+    // Quantity selector
+    const decreaseBtn = document.querySelector('.decrease-qty');
+    const increaseBtn = document.querySelector('.increase-qty');
+    const quantityInput = document.querySelector('.quantity-input');
+    
+    if (decreaseBtn && increaseBtn && quantityInput) {
+      decreaseBtn.addEventListener('click', function() {
+        let value = parseInt(quantityInput.value);
+        if (value > 1) {
+          quantityInput.value = value - 1;
+        }
+      });
+      
+      increaseBtn.addEventListener('click', function() {
+        let value = parseInt(quantityInput.value);
+        let max = parseInt(quantityInput.getAttribute('max') || 10);
+        if (value < max) {
+          quantityInput.value = value + 1;
+        }
+      });
+      
+      quantityInput.addEventListener('change', function() {
+        let value = parseInt(this.value);
+        let min = parseInt(this.min) || 1;
+        let max = parseInt(this.max) || 10;
+        
+        if (value < min) this.value = min;
+        if (value > max) this.value = max;
+      });
+    }
+    
+    // Pincode checker
+    const checkPincodeBtn = document.querySelector('.check-pincode');
+    const pincodeInput = document.querySelector('.pincode-input');
+    const deliveryMessage = document.querySelector('.delivery-message');
+    
+    if (checkPincodeBtn && pincodeInput) {
+      checkPincodeBtn.addEventListener('click', function() {
+        const pincode = pincodeInput.value.trim();
+        
+        if (pincode.length === 6 && /^\d+$/.test(pincode)) {
+          // Simulate pincode check
+          const serviceablePincodes = ['110001', '110002', '400001', '400002', '700001', '600001'];
+          
+          if (serviceablePincodes.includes(pincode)) {
+            deliveryMessage.innerHTML = '✅ Available! Delivery in 2-3 business days';
+            deliveryMessage.style.color = 'var(--success-color)';
+          } else {
+            deliveryMessage.innerHTML = '⚠️ Delivery not available at this pincode';
+            deliveryMessage.style.color = 'var(--accent-color)';
+          }
+        } else {
+          deliveryMessage.innerHTML = '❌ Please enter a valid 6-digit pincode';
+          deliveryMessage.style.color = 'var(--accent-color)';
+        }
+      });
+    }
+    
+    // Add to cart button
+    const addToCartBtn = document.querySelector('.add-to-cart-btn');
+    const cartCount = document.querySelector('.cart-count');
+    
+    if (addToCartBtn && cartCount) {
+      addToCartBtn.addEventListener('click', function() {
+        const quantity = parseInt(quantityInput?.value || 1);
+        const currentCount = parseInt(cartCount.textContent);
+        
+        // Update cart count
+        cartCount.textContent = currentCount + quantity;
+        
+        // Animation
+        cartCount.style.transform = 'scale(1.3)';
+        setTimeout(() => {
+          cartCount.style.transform = 'scale(1)';
+        }, 200);
+        
+        // Show success message (optional)
+        const originalText = this.innerHTML;
+        this.innerHTML = '<i class="fas fa-check"></i> Added to Cart!';
+        this.style.background = 'var(--success-color)';
+        
+        setTimeout(() => {
+          this.innerHTML = originalText;
+          this.style.background = '';
+        }, 2000);
+      });
+    }
+    
+    // Buy now button
+    const buyNowBtn = document.querySelector('.buy-now-btn');
+    
+    if (buyNowBtn) {
+      buyNowBtn.addEventListener('click', function() {
+        // Redirect to checkout
+        window.location.href = 'checkout.html';
+      });
+    }
+    
+    // Wishlist button
+    const wishlistBtn = document.querySelector('.wishlist-btn');
+    
+    if (wishlistBtn) {
+      wishlistBtn.addEventListener('click', function() {
+        const icon = this.querySelector('i');
+        
+        if (icon.classList.contains('far')) {
+          icon.classList.remove('far');
+          icon.classList.add('fas');
+          icon.style.color = 'var(--accent-color)';
+          
+          // Show message
+          alert('Added to wishlist!');
+        } else {
+          icon.classList.remove('fas');
+          icon.classList.add('far');
+          icon.style.color = '';
+          
+          // Show message
+          alert('Removed from wishlist!');
+        }
+      });
+    }
+    
+    // Write review button
+    const writeReviewBtn = document.querySelector('.write-review-btn');
+    
+    if (writeReviewBtn) {
+      writeReviewBtn.addEventListener('click', function() {
+        alert('Review form would open here. Please login to write a review.');
+      });
+    }
+    
+    // Helpful buttons in reviews
+    const helpfulBtns = document.querySelectorAll('.helpful-btn');
+    
+    helpfulBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const icon = this.querySelector('i');
+        const text = this.textContent;
+        const count = parseInt(text.match(/\d+/)?.[0] || 0);
+        
+        if (!this.classList.contains('clicked')) {
+          this.classList.add('clicked');
+          icon.classList.remove('far');
+          icon.classList.add('fas');
+          this.innerHTML = `<i class="fas fa-thumbs-up"></i> Helpful (${count + 1})`;
+          
+          // Disable after click (optional)
+          this.disabled = true;
+        }
+      });
+    });
+    
+    // Load more reviews
+    const loadMoreBtn = document.querySelector('.load-more-reviews');
+    
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', function() {
+        this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+        this.disabled = true;
+        
+        // Simulate loading more reviews
+        setTimeout(() => {
+          alert('More reviews would load here. Demo version.');
+          this.innerHTML = 'Load More Reviews';
+          this.disabled = false;
+        }, 1500);
+      });
+    }
+    
+    // Video placeholder click
+    const videoPlaceholder = document.querySelector('.product-video-placeholder');
+    
+    if (videoPlaceholder) {
+      videoPlaceholder.addEventListener('click', function() {
+        alert('Product video would play here. Demo version.');
+      });
+    }
+  });
+</script>
   </body>
 </html>
